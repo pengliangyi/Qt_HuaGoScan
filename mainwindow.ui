@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>758</width>
+    <height>529</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1,0">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget{background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #1260B2, stop: 0.3 #1260B2, stop: 0.6 #174894, stop: 1.0 #232A72);}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lbl_windowTitle">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600; color:#ffffff;&quot;&gt;HuaGoScan Scanner V1.0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QToolButton" name="win_btn_about">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover{border-image: url(:/new/image/images/title/win_home.PNG)}
+QToolButton:hover{ border-image: url(:/new/image/images/title/win_home_hover.PNG)}
+QToolButton:pressed{ border-image: url(:/new/image/images/title/win_home_press.PNG);}</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="win_btn_help">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover{border-image: url(:/new/image/images/title/win_help.PNG)}
+QToolButton:hover{ border-image: url(:/new/image/images/title/win_help_hover.PNG)}
+QToolButton:pressed{ border-image: url(:/new/image/images/title/win_help_press.PNG)}</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="win_btn_min">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover{border-image: url(:/new/image/images/title/win_min.PNG)}
+QToolButton:hover{ border-image: url(:/new/image/images/title/win_min_hover.PNG)}
+QToolButton:pressed{ border-image: url(:/new/image/images/title/win_min_press.PNG)}</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="win_btn_max">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover{border-image: url(:/new/image/images/title/win_max.PNG)}
+QToolButton:hover{ border-image: url(:/new/image/images/title/win_max_hover.PNG)}
+QToolButton:pressed{ border-image: url(:/new/image/images/title/win_max_press.PNG)}</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="win_btn_close">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover{border-image: url(:/new/image/images/title/win_exit.PNG)}
+QToolButton:hover{ border-image: url(:/new/image/images/title/win_exit_hover.PNG)}
+QToolButton:pressed{ border-image: url(:/new/image/images/title/win_exit_press.PNG)}</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_4" native="true">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/*QWidget { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #ff330d, stop: 1 #ff0d00);border: none; }*/</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QToolButton" name="btn_scan">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>扫描</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/scan.png</normaloff>:/new/image/images/scan.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_scanSettings">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>设置</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/print.png</normaloff>:/new/image/images/print.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_open">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>打开</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/open.png</normaloff>:/new/image/images/open.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_close">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>关闭</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/close.png</normaloff>:/new/image/images/close.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_save">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/save.png</normaloff>:/new/image/images/save.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_saveAs">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>另存为</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/saveas.png</normaloff>:/new/image/images/saveas.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_delete">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/delete.png</normaloff>:/new/image/images/delete.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_zoomIn">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>放大</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/zoomin.png</normaloff>:/new/image/images/zoomin.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_zoomOut">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>缩小</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/zoomout.png</normaloff>:/new/image/images/zoomout.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_zoomReal">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>还原</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/restore.png</normaloff>:/new/image/images/restore.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_zoomFit">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>适中</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/fit.png</normaloff>:/new/image/images/fit.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_antiClock">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>左旋转</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/left.png</normaloff>:/new/image/images/left.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="btn_clock">
+        <property name="styleSheet">
+         <string notr="true">QToolButton:!hover  { background-color: transparent; border: none;}
+QToolButton:hover   { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #EAF4F6, stop: 0.5 #1260b2, stop: 1 #EAF4F6);border: 1px solid #C2F0FF; border-radius: 4px; }
+QToolButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, x3: 0, y3: 2, stop: 0 #1260b2, stop: 0.5 #EAF4F6, stop: 1 #1260b2);border: 1px solid #BFDFBF; border-radius: 4px; }
+QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }</string>
+        </property>
+        <property name="text">
+         <string>右旋转</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/image/images/right.png</normaloff>:/new/image/images/right.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="5,0">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QGraphicsView" name="graphicsView"/>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,0">
+       <item>
+        <widget class="QListView" name="listView">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_17">
+           <item>
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>&lt;font color=black&gt;&lt;b&gt;尺寸:&lt;/b&gt;&lt;/font&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lab_imgSize">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>&lt;font color=black&gt;&lt;b&gt;类型:&lt;/b&gt;&lt;/font&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lab_imgFormat">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_15">
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>&lt;font color=black&gt;&lt;b&gt;大小:&lt;/b&gt;&lt;/font&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lab_imgData">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget_3{background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(0,115,187), stop: 0.2 rgb(27,132,187), stop: 0.3 rgb(0,124,198), stop: 1.0 rgb(4,87,153));border: 1px solid rgb(0,115,187);}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lab_statusImg">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>20</horstretch>
+          <verstretch>20</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resource.qrc">:/new/image/images/disconnect.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lab_status">
+        <property name="text">
+         <string>&lt;font color=white&gt;&lt;b&gt;未连接到扫描设备&lt;/b&gt;&lt;/font&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QProgressBar" name="progressBar">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>200</horstretch>
+          <verstretch>20</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QProgressBar{ border: 2px solid #656565; border-radius: 5px; text-align: center; }
+QProgressBar::chunk{ background-color: #05B8CC; width: 10px; margin: 0.5px; }</string>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

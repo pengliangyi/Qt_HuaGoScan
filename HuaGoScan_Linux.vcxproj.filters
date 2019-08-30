@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    
+    
+    <ClInclude Include="ui_mainwindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\adjust.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\angle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\connect.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\copy.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\delBlack.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\disconnect.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\fit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\horizontal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\left.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\logo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\manualCut.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\ocr.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\open.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\pdf.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\print.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\printview.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="resource.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="images\restore.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\right.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\save.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\saveas.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\scan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\stop.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\tiff.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\trayicon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\vertical.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_exit.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_exit_hover.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_exit_press.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_help.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_help_hover.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_help_press.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_home.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_home_hover.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_home_press.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_max.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_max_hover.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_max_press.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_min.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_min_hover.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_min_press.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_restore.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_restore_hover.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\title\win_restore_press.PNG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\zoomin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\zoomout.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
