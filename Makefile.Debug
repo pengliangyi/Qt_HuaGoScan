@@ -157,6 +157,7 @@ debug\qrc_resource.cpp: resource.qrc \
 		G:\Qt\Qt5.13.0\5.13.0\msvc2017\bin\rcc.exe \
 		images\ocr.png \
 		images\open.png \
+		images\close.png \
 		images\disconnect.png \
 		images\delete.png \
 		images\restore.png \
@@ -681,12 +682,14 @@ debug\mainwindow.obj: mainwindow.cpp mainwindow.h \
 		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets\qgraphicsscene.h \
 		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui\qpen.h \
 		ui_mainwindow.h \
+		scansettingsdialog.h \
+		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets\QDialog \
+		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets\qdialog.h \
 		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui\QMouseEvent \
 		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets\QFileDialog \
 		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets\qfiledialog.h \
 		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore\qdir.h \
 		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore\qfileinfo.h \
-		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets\qdialog.h \
 		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets\QMessageBox \
 		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets\qmessagebox.h \
 		G:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets\QButtonGroup \

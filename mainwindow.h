@@ -35,6 +35,7 @@ signals:
 private slots:
     void on_win_btn_close_clicked();
 
+    void on_btn_scan_clicked();
     void on_btn_open_clicked();
     void on_btn_save_clicked();
     void on_btn_saveAs_clicked();
@@ -43,13 +44,17 @@ private slots:
     void on_btn_zoomOut_clicked();
     void on_btn_zoomReal_clicked();
     void on_btn_zoomFit_clicked();
+    void on_btn_antiClock_clicked();
+    void on_btn_clock_clicked();
 
     void showSettingsDialog();
     void on_ImgViewAvailable_changed(bool isAvailable);
 
-    void on_btn_antiClock_clicked();
 
-    void on_btn_clock_clicked();
+
+    void on_win_btn_max_clicked();
+
+    void on_win_btn_min_clicked();
 
 private:
     bool _isleftpressed;
@@ -63,6 +68,7 @@ private:
     void freshDisplayImg(QImage *img,int width,int height);
     void initInterface();
     bool isViewFit;
+    bool isScanning;
 
 };
 

@@ -78,13 +78,25 @@
       </item>
       <item>
        <widget class="QToolButton" name="win_btn_about">
+        <property name="minimumSize">
+         <size>
+          <width>33</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>33</width>
+          <height>15</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QToolButton:!hover{border-image: url(:/new/image/images/title/win_home.PNG)}
 QToolButton:hover{ border-image: url(:/new/image/images/title/win_home_hover.PNG)}
 QToolButton:pressed{ border-image: url(:/new/image/images/title/win_home_press.PNG);}</string>
         </property>
         <property name="text">
-         <string>...</string>
+         <string/>
         </property>
         <property name="iconSize">
          <size>
@@ -96,49 +108,106 @@ QToolButton:pressed{ border-image: url(:/new/image/images/title/win_home_press.P
       </item>
       <item>
        <widget class="QToolButton" name="win_btn_help">
+        <property name="minimumSize">
+         <size>
+          <width>33</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>33</width>
+          <height>15</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QToolButton:!hover{border-image: url(:/new/image/images/title/win_help.PNG)}
 QToolButton:hover{ border-image: url(:/new/image/images/title/win_help_hover.PNG)}
 QToolButton:pressed{ border-image: url(:/new/image/images/title/win_help_press.PNG)}</string>
         </property>
         <property name="text">
-         <string>...</string>
+         <string/>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QToolButton" name="win_btn_min">
+        <property name="minimumSize">
+         <size>
+          <width>33</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>33</width>
+          <height>15</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QToolButton:!hover{border-image: url(:/new/image/images/title/win_min.PNG)}
 QToolButton:hover{ border-image: url(:/new/image/images/title/win_min_hover.PNG)}
 QToolButton:pressed{ border-image: url(:/new/image/images/title/win_min_press.PNG)}</string>
         </property>
         <property name="text">
-         <string>...</string>
+         <string/>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QToolButton" name="win_btn_max">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>33</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>33</width>
+          <height>15</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QToolButton:!hover{border-image: url(:/new/image/images/title/win_max.PNG)}
 QToolButton:hover{ border-image: url(:/new/image/images/title/win_max_hover.PNG)}
 QToolButton:pressed{ border-image: url(:/new/image/images/title/win_max_press.PNG)}</string>
         </property>
         <property name="text">
-         <string>...</string>
+         <string/>
+        </property>
+        <property name="autoExclusive">
+         <bool>false</bool>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QToolButton" name="win_btn_close">
+        <property name="minimumSize">
+         <size>
+          <width>33</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>33</width>
+          <height>15</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">QToolButton:!hover{border-image: url(:/new/image/images/title/win_exit.PNG)}
 QToolButton:hover{ border-image: url(:/new/image/images/title/win_exit_hover.PNG)}
 QToolButton:pressed{ border-image: url(:/new/image/images/title/win_exit_press.PNG)}</string>
         </property>
         <property name="text">
-         <string>...</string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -170,7 +239,8 @@ QToolButton:disabled{ background-color: transparent; color: #808080; border: non
         </property>
         <property name="icon">
          <iconset resource="resource.qrc">
-          <normaloff>:/new/image/images/scan.png</normaloff>:/new/image/images/scan.png</iconset>
+          <normaloff>:/new/image/images/scan.png</normaloff>
+          <normalon>:/new/image/images/stop.png</normalon>:/new/image/images/scan.png</iconset>
         </property>
         <property name="iconSize">
          <size>

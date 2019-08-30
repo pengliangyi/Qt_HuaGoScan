@@ -24,6 +24,7 @@ MainWindow::MainWindow(QWidget *parent) :
     pic = new QGraphicsScene;
     ui->graphicsView->setScene(pic);
     isViewFit = true;//窗口拖动时是否实时适屏显示
+    isScanning = false;
 
     connect(ui->btn_scanSettings,SIGNAL(clicked()),this,SLOT(showSettingsDialog()));
     connect(this,SIGNAL(ImgViewAvailable(bool)),this,SLOT(on_ImgViewAvailable_changed(bool)));
@@ -174,7 +175,22 @@ void MainWindow::on_win_btn_close_clicked()
     close();
 }
 
-//shortcut btn slots(8)
+//shortcut btn slots(9)
+void MainWindow::on_btn_scan_clicked()
+{
+    if(isScanning)
+    {
+        isScanning = false;
+        ui->btn_scan->setIcon(QIcon(":/new/image/images/scan.png"));
+        ui->btn_scan->setText(QStringLiteral("扫描"));
+    }
+    else
+    {
+        isScanning = true;
+        ui->btn_scan->setIcon(QIcon(":/new/image/images/stop.png"));
+        ui->btn_scan->setText(QStringLiteral("停止"));
+    }
+}
 void MainWindow::on_btn_open_clicked()
 {
     QString fileName = QFileDialog::getOpenFileName(this,QStringLiteral("打开图像"),"./",QStringLiteral("(*.jpg *.png *.bmp)"));
@@ -312,3 +328,27 @@ void MainWindow::on_ImgViewAvailable_changed(bool isAvailable)
 }
 
 
+
+
+void MainWindow::on_win_btn_max_clicked()
+{
+    if (windowState() == Qt::WindowMaximized)
+    {
+        setWindowState(Qt::WindowNoState);
+        ui->win_btn_max->setStyleSheet("QToolButton:!hover{border-image: url(:/new/image/images/title/win_max.PNG)};"
+        "QToolButton:hover{border-image: url(:/new/image/images/title/win_max_hover.PNG)};"
+        "QToolButton:pressed{border-image: url(:/new/image/images/title/win_max_press.PNG)}");
+    }
+    else
+    {
+        setWindowState(Qt::WindowMaximized);
+        ui->win_btn_max->setStyleSheet("QToolButton:!hover{border-image: url(:/new/image/images/title/win_restore.PNG)};"
+        "QToolButton:hover{border-image: url(:/new/image/images/title/win_restore_hover.PNG)};"
+        "QToolButton:pressed{border-image: url(:/new/image/images/title/win_restore_press.PNG)}");
+    }
+}
+
+void MainWindow::on_win_btn_min_clicked()
+{
+    setWindowState(Qt::WindowMinimized);
+}

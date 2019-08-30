@@ -96,7 +96,7 @@ public:
         widget->setObjectName(QString::fromUtf8("widget"));
         widget->setStyleSheet(QString::fromUtf8("QWidget{background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #1260B2, stop: 0.3 #1260B2, stop: 0.6 #174894, stop: 1.0 #232A72);}"));
         horizontalLayout_2 = new QHBoxLayout(widget);
-        horizontalLayout_2->setSpacing(0);
+        horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(10, 0, 10, 0);
@@ -111,6 +111,8 @@ public:
 
         win_btn_about = new QToolButton(widget);
         win_btn_about->setObjectName(QString::fromUtf8("win_btn_about"));
+        win_btn_about->setMinimumSize(QSize(33, 15));
+        win_btn_about->setMaximumSize(QSize(33, 15));
         win_btn_about->setStyleSheet(QString::fromUtf8("QToolButton:!hover{border-image: url(:/new/image/images/title/win_home.PNG)}\n"
 "QToolButton:hover{ border-image: url(:/new/image/images/title/win_home_hover.PNG)}\n"
 "QToolButton:pressed{ border-image: url(:/new/image/images/title/win_home_press.PNG);}"));
@@ -120,6 +122,8 @@ public:
 
         win_btn_help = new QToolButton(widget);
         win_btn_help->setObjectName(QString::fromUtf8("win_btn_help"));
+        win_btn_help->setMinimumSize(QSize(33, 15));
+        win_btn_help->setMaximumSize(QSize(33, 15));
         win_btn_help->setStyleSheet(QString::fromUtf8("QToolButton:!hover{border-image: url(:/new/image/images/title/win_help.PNG)}\n"
 "QToolButton:hover{ border-image: url(:/new/image/images/title/win_help_hover.PNG)}\n"
 "QToolButton:pressed{ border-image: url(:/new/image/images/title/win_help_press.PNG)}"));
@@ -128,6 +132,8 @@ public:
 
         win_btn_min = new QToolButton(widget);
         win_btn_min->setObjectName(QString::fromUtf8("win_btn_min"));
+        win_btn_min->setMinimumSize(QSize(33, 15));
+        win_btn_min->setMaximumSize(QSize(33, 15));
         win_btn_min->setStyleSheet(QString::fromUtf8("QToolButton:!hover{border-image: url(:/new/image/images/title/win_min.PNG)}\n"
 "QToolButton:hover{ border-image: url(:/new/image/images/title/win_min_hover.PNG)}\n"
 "QToolButton:pressed{ border-image: url(:/new/image/images/title/win_min_press.PNG)}"));
@@ -136,14 +142,24 @@ public:
 
         win_btn_max = new QToolButton(widget);
         win_btn_max->setObjectName(QString::fromUtf8("win_btn_max"));
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(win_btn_max->sizePolicy().hasHeightForWidth());
+        win_btn_max->setSizePolicy(sizePolicy);
+        win_btn_max->setMinimumSize(QSize(33, 15));
+        win_btn_max->setMaximumSize(QSize(33, 15));
         win_btn_max->setStyleSheet(QString::fromUtf8("QToolButton:!hover{border-image: url(:/new/image/images/title/win_max.PNG)}\n"
 "QToolButton:hover{ border-image: url(:/new/image/images/title/win_max_hover.PNG)}\n"
 "QToolButton:pressed{ border-image: url(:/new/image/images/title/win_max_press.PNG)}"));
+        win_btn_max->setAutoExclusive(false);
 
         horizontalLayout_2->addWidget(win_btn_max);
 
         win_btn_close = new QToolButton(widget);
         win_btn_close->setObjectName(QString::fromUtf8("win_btn_close"));
+        win_btn_close->setMinimumSize(QSize(33, 15));
+        win_btn_close->setMaximumSize(QSize(33, 15));
         win_btn_close->setStyleSheet(QString::fromUtf8("QToolButton:!hover{border-image: url(:/new/image/images/title/win_exit.PNG)}\n"
 "QToolButton:hover{ border-image: url(:/new/image/images/title/win_exit_hover.PNG)}\n"
 "QToolButton:pressed{ border-image: url(:/new/image/images/title/win_exit_press.PNG)}"));
@@ -170,6 +186,7 @@ public:
 "QToolButton:disabled{ background-color: transparent; color: #808080; border: none; }"));
         QIcon icon;
         icon.addFile(QString::fromUtf8(":/new/image/images/scan.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/new/image/images/stop.png"), QSize(), QIcon::Normal, QIcon::On);
         btn_scan->setIcon(icon);
         btn_scan->setIconSize(QSize(40, 40));
         btn_scan->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
@@ -379,11 +396,11 @@ public:
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
         listView = new QListView(MainWindow);
         listView->setObjectName(QString::fromUtf8("listView"));
-        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(listView->sizePolicy().hasHeightForWidth());
-        listView->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(listView->sizePolicy().hasHeightForWidth());
+        listView->setSizePolicy(sizePolicy1);
 
         verticalLayout_4->addWidget(listView);
 
@@ -471,11 +488,11 @@ public:
         horizontalLayout_5->setContentsMargins(10, 0, 20, 0);
         lab_statusImg = new QLabel(widget_3);
         lab_statusImg->setObjectName(QString::fromUtf8("lab_statusImg"));
-        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy1.setHorizontalStretch(20);
-        sizePolicy1.setVerticalStretch(20);
-        sizePolicy1.setHeightForWidth(lab_statusImg->sizePolicy().hasHeightForWidth());
-        lab_statusImg->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy2.setHorizontalStretch(20);
+        sizePolicy2.setVerticalStretch(20);
+        sizePolicy2.setHeightForWidth(lab_statusImg->sizePolicy().hasHeightForWidth());
+        lab_statusImg->setSizePolicy(sizePolicy2);
         lab_statusImg->setPixmap(QPixmap(QString::fromUtf8(":/new/image/images/disconnect.png")));
 
         horizontalLayout_5->addWidget(lab_statusImg);
@@ -491,11 +508,11 @@ public:
 
         progressBar = new QProgressBar(widget_3);
         progressBar->setObjectName(QString::fromUtf8("progressBar"));
-        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy2.setHorizontalStretch(200);
-        sizePolicy2.setVerticalStretch(20);
-        sizePolicy2.setHeightForWidth(progressBar->sizePolicy().hasHeightForWidth());
-        progressBar->setSizePolicy(sizePolicy2);
+        QSizePolicy sizePolicy3(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy3.setHorizontalStretch(200);
+        sizePolicy3.setVerticalStretch(20);
+        sizePolicy3.setHeightForWidth(progressBar->sizePolicy().hasHeightForWidth());
+        progressBar->setSizePolicy(sizePolicy3);
         progressBar->setStyleSheet(QString::fromUtf8("QProgressBar{ border: 2px solid #656565; border-radius: 5px; text-align: center; }\n"
 "QProgressBar::chunk{ background-color: #05B8CC; width: 10px; margin: 0.5px; }"));
         progressBar->setValue(0);
@@ -516,11 +533,11 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         lbl_windowTitle->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:xx-large; font-weight:600; color:#ffffff;\">HuaGoScan Scanner V1.0</span></p></body></html>", nullptr));
-        win_btn_about->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        win_btn_help->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        win_btn_min->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        win_btn_max->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        win_btn_close->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
+        win_btn_about->setText(QString());
+        win_btn_help->setText(QString());
+        win_btn_min->setText(QString());
+        win_btn_max->setText(QString());
+        win_btn_close->setText(QString());
         btn_scan->setText(QCoreApplication::translate("MainWindow", "\346\211\253\346\217\217", nullptr));
         btn_scanSettings->setText(QCoreApplication::translate("MainWindow", "\350\256\276\347\275\256", nullptr));
         btn_open->setText(QCoreApplication::translate("MainWindow", "\346\211\223\345\274\200", nullptr));
